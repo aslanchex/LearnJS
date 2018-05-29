@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Test</title>
+        <script src="jq.js"></script>
+    </head>
+    <body>
+        <button>New Button</button>
+        <div class="">
+            <a href="http://ya.ru" id="link">Открыть ссылку</a>
+        </div>
+        <div class="">
+            <button>New button 2</button>
+        </div>
+
+        <script>
+            function handler1(e) {
+                if (e.keyCode > 48 || e.keyCode < 57) {
+                    console.log('Курсор наведен');
+                }
+
+            }
+
+            function handler2() {
+                console.log('Курсор снят!');
+            }
+
+            var button = document.querySelector('button');
+
+            button.addEventListener('keydown', handler1);
+        //button.addEventListener('mouseout', handler2);
+            //button.removeEventListener('click', handler2);
+
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+            });
+            window.addEventListener("load", function() {
+                console.log("html структура загружена");
+            });
+        </script
+    </body>
+</html>
