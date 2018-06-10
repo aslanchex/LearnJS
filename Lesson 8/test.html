@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+
+        <style>
+            h1 {
+                color: red;
+                text-align: center;
+                margin-top: 0px;
+                padding-top: 0px;
+            }
+            input {
+                width: 300px;
+                height: 15px;
+                margin-left: 10px;
+                margin-right: 10px;
+                padding: 5px 5px 5px 5px;
+                border-radius: 10px;
+                border-color: black;
+
+            }
+            #list {
+                border: 1px;
+                border-color: black;
+                margin-left: 16px;
+            }
+
+
+        </style>
+        <script src="jq.js">
+
+        </script>
+    </head>
+    <body id="parent">
+
+        <div>
+            <h1>Hello world!</h1>
+        </div>
+        <div class="text">
+            <input type="text" class="textarea" name="" value="">
+        </div>
+
+        <script src ="lesson 8 ex3.js">
+        </script>
+
+
+        <!-- <script>
+            let url1 = 'https://images1.popmeh.ru/upload/img_cache/ea6/ea6f81717f3c11cd08c55e18c88239b6_ce_626x333x0x24_cropped_800x427.jpg';
+            let url2 = 'https://cs3.gtavicecity.ru/attachments/2015-08/small-fit/97eea81b149b00bf959e8f4797b6788a32656a59/5577-287486-2015-08-17-203516.jpg';
+            let url3 = 'https://cs4.gtavicecity.ru/attachments/2015-08/small-fit/5b5fa38e1bf176f6dfd77c07b3cc5ebddd088146/5578-287771-2015-08-18-185153.jpg';
+
+            function loadimage(url) {
+                return new Promise((resolve, reject) => {
+                    let i = new Image();
+                    document.body.appendChild(i);
+
+                    i.src = url;
+                    i.addEventListener('load', () => {
+                        resolve();
+                    });
+                    i.addEventListener('error', () => {
+                        reject();
+                    });
+                });
+            }
+
+            let p = loadimage(url1);
+
+            p.then(
+                () => {
+                    console.log('картинка 1 загружена успешно');
+                    return loadimage(url2);
+                }
+            ).then(
+                () => {
+                    console.log('картинка 2 загружена успешно');
+                    return loadimage(url3);
+                }
+            ).then(
+                () => {
+                    console.log('картинка 3 загружена успешно');
+                }
+            )
+        </script> -->
+    </body>
+</html>
